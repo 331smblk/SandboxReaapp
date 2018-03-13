@@ -23,6 +23,10 @@
             <div class="column">
               <!-- <tile-table2></tile-table2> -->
               <tile-table3></tile-table3>
+              <div v-for='(item) in ListingCards' :key='id'>
+                <card-info ></card-info>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -43,7 +47,7 @@ import TileTable from '../../components/UIElements/Tiles/TileTable.vue'
 import TileTable2 from '../../components/UIElements/Tiles/TileTable2.vue'
 import TileTable3 from '../../components/UIElements/Tiles/TileTable3.vue'
 import BreadCrumbs from '../../components/UIElements/BreadCrumbs.vue'
-
+import CardInfo from '../../components/UIElements/Cards/CardInfo.vue'
 export default {
   name: 'MapsIndex',
   components: {
@@ -54,13 +58,20 @@ export default {
     TileTable,
     TileTable2,
     TileTable3,
-    BreadCrumbs
+    BreadCrumbs,
+    CardInfo
   },
     data() {
 
       return {
         isOpen: false,
         isOpen2: false,
+
+        ListingCards: [
+          { id: 1 },
+          { id: 2 },
+          { id: 3 },
+        ], 
 
         zoom: 13,
         center: [47.413220, -1.219482],

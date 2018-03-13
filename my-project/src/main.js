@@ -20,6 +20,7 @@ Vue.component('v-tilelayer', Vue2Leaflet.TileLayer);
 Vue.component('v-marker', Vue2Leaflet.Marker);
 
 
+
 Vue.config.productionTip = false
 
 Vue.use(Buefy)
@@ -29,5 +30,13 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+
+  mounted() {
+    axios.get("https://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=X1-ZWz18pz554ttzf_7oq0o")
+    .then(response => {this.results = response.data.results})
+  }
 })
+
+
+

@@ -79,4 +79,8 @@
     z-index: 100;
 }
   
+
+.is-paddingless-left { padding-left:0px;} 
+.is-paddingless-right{ padding-right:0px;}
+
 </style>

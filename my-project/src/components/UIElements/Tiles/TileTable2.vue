@@ -1,13 +1,8 @@
 <template>
-  
-      <div class="tile box">
-        
-        <section>
+      <div class="tile is-paddingless-left is-paddingless-right box">
             <!-- <a-c-tabs></a-c-tabs> -->
             <b-tabs v-model="activeTab" size="is-small" class="block">
                 <b-tab-item label="Search">
-                    <a-c-search ></a-c-search>
-            
                     <b-table
                         :data="tableDataSimple"
                         :opened-detailed="defaultOpenedDetails"
@@ -52,13 +47,10 @@
                             </article>
                         </template>
                     </b-table>
-
                 </b-tab-item>
 
                 <b-tab-item label="My Searches">
                     <a-c-search></a-c-search>
-                
-                    
                     <b-table
                         :data="tableDataSimpleTwo"
                         :opened-detailed="defaultOpenedDetails"
@@ -123,13 +115,12 @@
                             </article>
                         </template>
                     </b-table>
- 
-
                 </b-tab-item>
 
                 <b-tab-item label="Alerts" >
-                   <a-c-search></a-c-search>
-                
+                    <a-c-search></a-c-search>
+                    <a-c-tabs></a-c-tabs>
+                   
                     <b-table
                         :data="tableDataSimpleAlerts"
                         :opened-detailed="defaultOpenedDetails"
@@ -168,13 +159,9 @@
                             </article>
                         </template>
                     </b-table>
-
                 </b-tab-item>
             </b-tabs>
-            
-        </section>
       </div>
-   
 </template>
 
 <script>
@@ -235,7 +222,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 
 
 </style>

@@ -64,7 +64,7 @@ export default {
   },
     data() {
         return {
-        index: 0,
+         index: 0,
          links:[ 
             { name: 'Home', link: '/' },
             { name: 'Calendar', link: '/calendar' },

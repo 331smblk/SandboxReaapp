@@ -54,12 +54,12 @@ export default new Router({
     },
     {
       path: '/maps',
-      name: 'maps',
+      name: 'Maps',
       component: Maps
     },
     {
       path: '/maps-1',
-      name: 'maps-1',
+      name: 'Maps Option 1',
       component: MapsOptionOne
     },
     {

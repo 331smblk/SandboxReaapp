@@ -46,9 +46,12 @@
                 </p>
               </footer>
             </div>
+            
             <card-info></card-info>
             <card-calendar></card-calendar>
             <listing-notes></listing-notes>
+
+            <card-info-two></card-info-two>
 
 
            
@@ -249,6 +252,7 @@ import CardCalendar from './CardCalendar.vue'
 import ListingNotes from './ListingNotes.vue'
 import CardImagePlus from './CardImagePlus.vue'
 
+import CardInfoTwo from '../../components/UIElements/Cards/CardInfo.vue'
 
 export default {
   name: 'SingleListing',
@@ -260,7 +264,8 @@ export default {
     CardInfo,
     CardCalendar,
     ListingNotes,
-    CardImagePlus
+    CardImagePlus,
+    CardInfoTwo
   },
     data() {
         return {
